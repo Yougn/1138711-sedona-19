@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Евгений Шестаков](https://up.htmlacademy.ru/adaptive/19/user/1138711).
+* Студент: [Евгений Владимирович](https://up.htmlacademy.ru/adaptive/19/user/1138711).
 * Наставник:[Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 
