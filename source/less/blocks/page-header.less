@@ -3,16 +3,38 @@
 }
 
 .page-header__toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   width: 23px;
   height: 22px;
+
+  &--close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &--open {
+    position: absolute;
+    bottom: 19px;
+    right: 20px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 .page-header__logo {
   display: flex;
   justify-content: center;
+  position: relative;
   max-height: 56px;
   background-color: #ffffff;
 }

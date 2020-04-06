@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -30,9 +31,9 @@
         </ul>
       </div>
 
-      <a class="page-header__logo">
+      <picture class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город Седона">
-      </a>
+      </picture>
 
     </nav>
     <button class="page-header__toggle page-header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -61,7 +62,7 @@
         </fieldset>
 
         <fieldset class="feedback-form__style">
-          <legend class="feedback-form__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
           <label class="feedback-form__label" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
           <input class="feedback-form__input feedback-form__input--contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
           <label class="feedback-form__label" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
@@ -69,17 +70,17 @@
         </fieldset>
 
         <fieldset class="feedback-form__style">
-          <legend class="feedback-form__legend">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--radio">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list">
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input class="feedback-form__input feedback-form__input--radio" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
               <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input class="feedback-form__input feedback-form__input--radio" type="radio" name="rating" id="negative" value="Скорее отрицательное">
               <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
             </li>
-            <li class="feedback-form__item">
+            <li class="feedback-form__item feedback-form__item--radio">
               <input  class="feedback-form__input feedback-form__input--radio" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
               <label  class="feedback-form__label feedback-form__label--radio" for="nothing">Затрудняюсь ответить</label>
             </li>
@@ -87,7 +88,7 @@
         </fieldset>
 
         <fieldset class="feedback-form__style">
-          <legend class="feedback-form__legend">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list">
             <li class="feedback-form__item feedback-form__item--checkbox">
               <input class="feedback-form__input feedback-form__input--checkbox" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
@@ -108,12 +109,12 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback-form__style">
-          <legend class="feedback-form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-          <textarea class="feedback-form__textarea" rows="10" cols="30" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="feedback-form__style feedback-form__style--textarea">
+          <legend class="feedback-form__legend feedback-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+          <textarea class="feedback-form__textarea" rows="10" cols="22" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <button class="feedback-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="button feedback-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
 
       </form>
 
@@ -128,13 +129,13 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Твиттере</span></a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на Ютубе</span></a>
         </li>
       </ul>
     </div>
