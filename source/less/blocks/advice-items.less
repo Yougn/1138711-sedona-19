@@ -3,34 +3,55 @@
 }
 
 .advice-items__list {
-  .list-reset ();
+  .list-reset();
 }
 
 .advice-items__item {
   position: relative;
   padding-left: 50px;
   text-align: left;
+
+  &--housing::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 37px;
+    height: 36px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenir::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 4px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -4px;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .advice-items__title {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 1.44;
   margin-bottom: 20px;
 }
 
 .advice-items__description {
-  line-height: 21px;
   margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333333;
 }
-/*
-.advice-items__item--housing {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 37px;
-  height: 36px;
-  background-image: url("../img/icon-house.svg");
-}*/
