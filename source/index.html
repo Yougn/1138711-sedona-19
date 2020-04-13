@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="container">
 
   <header class="page-header">
     <button class="page-header__toggle page-header__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -48,13 +48,13 @@
     <section class="advantages">
 
     <div class="review">
-      <h1 class="review__main">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+      <h1 class="review__title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
       <p class="review__subtitle"> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
     </div>
 
 
         <ul class="advantages__list">
-          <li>
+          <li class="advantages__box">
             <div class="advantages__item advantages__item--active">
               <h2 class="advantages__title advantages__title--top">НАСТОЯЩИЙ ГОРОДОК</h2>
               <p class="advantages__number"> — №1 — </p>
@@ -82,8 +82,7 @@
             </ul>
           </li>
 
-
-          <li>
+          <li class="advantages__box advantages__box--bridge">
             <div class="advantages__item">
               <h2 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
               <p class="advantages__number">— №2 —</p>
@@ -92,27 +91,26 @@
             <img src="img/main-bridge-mobile@1x.jpg" class="advantages__picture" width="320" height="260" alt="Фотография прекрасного моста дьявола">
           </li>
 
-          <li>
-            <div class="advantages__item advantages__item--inactive">
+        <ul class="advantages__extra advantages__list">
+          <li class="advantages__item advantages__item--inactive">
               <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__description advantages__description--inactive">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-            </div>
           </li>
-          <li>
-            <div class="advantages__item advantages__item--inactive">
+          <li class="advantages__item advantages__item--inactive">
               <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
               <p class="advantages__number">— №4 —</p>
               <p class="advantages__description advantages__description--inactive">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-            </div>
           </li>
-          <li>
-            <div  class="advantages__item advantages__item--inactive">
+          <li class="advantages__item advantages__item--inactive">
               <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__description advantages__description--inactive">БОЛЬШИНСТВО ЕДЕТ В ГРАНД-КАНЬОН И ТОЛПИТСЯ ТАМ</p>
-            </div>
           </li>
+        </ul>
+
+        </ul>
+
         </ul>
       </section>
 

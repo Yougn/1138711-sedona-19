@@ -24,7 +24,7 @@
   width: 320px;
   height: 26px;
   background-image: url("../img/bg-intro-triangle-mobile-top.svg");
-
+  background-repeat: no-repeat;
 }
 
 .advantages__title {
@@ -58,4 +58,45 @@
 
 .advantages__picture {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+
+  .advantages__box {
+    display: flex;
+    max-height: 256px;
+
+    &--bridge {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .advantages__item {
+    padding: 48px 47px;
+    width: calc(100% / 3);
+  }
+
+  .advantages__item--active::before {
+    display: none;
+  }
+
+  .advantages__item--inactive {
+    padding: 50px 22px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+  }
+
+  .advantages__picture {
+    width: calc(100% / 3 * 3);
+  }
+
+  .advantages__extra {
+    display: flex;
+    height: 256px;
+  }
+
 }

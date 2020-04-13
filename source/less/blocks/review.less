@@ -2,12 +2,12 @@
   padding: 42px 32px 32px;
 }
 
-.review__main {
+.review__title {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
-  color: #333333;
+  color: #000000;
 }
 
 .review__subtitle {
@@ -16,12 +16,13 @@
   color: #333333;
 }
 
-.review__subtitle::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -1px;
-  width: 320px;
-  height: 26px;
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
+@media (min-width: @tablet-width) {
+
+  .review {
+    padding: 42px 143px 32px;
+  }
+
+  .review__title {
+    font-size: 21px;
+  }
 }

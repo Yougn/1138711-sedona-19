@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -39,5 +41,24 @@
 
   img {
     z-index: 10;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

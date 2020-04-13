@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="container">
 
   <header class="page-header">
     <button class="page-header__toggle page-header__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
@@ -56,7 +56,7 @@
 
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="feedback-form__style">
+        <fieldset class="feedback-form__group feedback-form__group--name">
           <legend class="feedback-form__legend">ПРЕДСТАВЬТЕСЬ:</legend>
           <label class="feedback-form__label" for="name">ИМЯ*:</label>
           <input class="feedback-form__name" type="text" name="name" id="name" placeholder="Петр" required>
@@ -66,15 +66,15 @@
           <input  class="feedback-form__full" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
         </fieldset>
 
-        <fieldset class="feedback-form__style">
+        <fieldset class="feedback-form__group feedback-form__group--contact">
           <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
           <label class="feedback-form__label feedback-form__label--phone" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
           <input class="feedback-form__contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
           <label class="feedback-form__label feedback-form__label--mail" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-          <input class="feedback-form__contact" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+          <input class="feedback-form__contact feedback-form__contact--back" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
         </fieldset>
 
-        <fieldset class="feedback-form__style">
+        <fieldset class="feedback-form__group feedback-form__group--radio">
           <legend class="feedback-form__legend feedback-form__legend--radio">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list">
             <li class="feedback-form__item feedback-form__item--radio">
@@ -92,7 +92,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback-form__style">
+        <fieldset class="feedback-form__group feedback-form__group--checkbox">
           <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list feedback-form__list--checkbox">
             <li class="feedback-form__item feedback-form__item--checkbox">
@@ -114,7 +114,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback-form__style feedback-form__style--textarea">
+        <fieldset class="feedback-form__group feedback-form__group--textarea">
           <legend class="feedback-form__legend feedback-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
           <label for="comment" class="visually-hidden">Комментарии</label>
           <textarea class="feedback-form__textarea feedback-form__textarea--text" rows="9"   name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
