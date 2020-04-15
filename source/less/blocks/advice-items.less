@@ -1,12 +1,10 @@
-.advice-items {
+.advice {
   padding: 35px 20px 20px 20px;
+  margin: 0;
+  list-style: none;
 }
 
-.advice-items__list {
-  .list-reset();
-}
-
-.advice-items__item {
+.advice__item {
   position: relative;
   padding-left: 50px;
   text-align: left;
@@ -34,7 +32,7 @@
   &--food::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -4px;
     width: 40px;
     height: 35px;
@@ -42,7 +40,7 @@
   }
 }
 
-.advice-items__title {
+.advice__title {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
@@ -50,22 +48,21 @@
   margin-bottom: 20px;
 }
 
-.advice-items__description {
+.advice__description {
   margin-bottom: 20px;
   line-height: 1.5;
   color: #333333;
 }
 
 @media (min-width: @tablet-width) {
-  .advice-items__list {
+  .advice {
     display: flex;
     align-items: center;
-    height: 330px;
+    padding: 140px 46px 40px 51px;
   }
 
-  .advice-items__title {
+  .advice__title {
     font-size: 21px;
     line-height: 1.24;
   }
-
 }

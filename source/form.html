@@ -58,20 +58,34 @@
 
         <fieldset class="feedback-form__group feedback-form__group--name">
           <legend class="feedback-form__legend">ПРЕДСТАВЬТЕСЬ:</legend>
-          <label class="feedback-form__label" for="name">ИМЯ*:</label>
-          <input class="feedback-form__name" type="text" name="name" id="name" placeholder="Петр" required>
-          <label class="feedback-form__label" for="surname">ФАМИЛИЯ*:</label>
-          <input  class="feedback-form__full" type="text" name="surname" id="surname" placeholder="Иванов" required>
-          <label class="feedback-form__label" for="patronymic">ОТЧЕСТВО:</label>
-          <input  class="feedback-form__full" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+          <ul class="feedback-form__list">
+            <li class="feedback-form__item">
+              <label class="feedback-form__label" for="name">ИМЯ*:</label>
+              <input class="feedback-form__name" type="text" name="name" id="name" placeholder="Петр" required>
+            </li>
+            <li class="feedback-form__item">
+              <label class="feedback-form__label" for="surname">ФАМИЛИЯ*:</label>
+              <input  class="feedback-form__full" type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </li>
+            <li class="feedback-form__item">
+              <label class="feedback-form__label" for="patronymic">ОТЧЕСТВО:</label>
+              <input  class="feedback-form__full" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--contact">
           <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
-          <label class="feedback-form__label feedback-form__label--phone" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-          <input class="feedback-form__contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
-          <label class="feedback-form__label feedback-form__label--mail" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-          <input class="feedback-form__contact feedback-form__contact--back" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+          <ul class="feedback-form__list">
+            <li class="feedback-form__item">
+              <label class="feedback-form__label feedback-form__label--phone" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+              <input class="feedback-form__contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
+            </li>
+            <li class="feedback-form__item">
+              <label class="feedback-form__label feedback-form__label--mail" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+              <input class="feedback-form__contact feedback-form__contact--back" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--radio">
@@ -116,7 +130,6 @@
 
         <fieldset class="feedback-form__group feedback-form__group--textarea">
           <legend class="feedback-form__legend feedback-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-          <label for="comment" class="visually-hidden">Комментарии</label>
           <textarea class="feedback-form__textarea feedback-form__textarea--text" rows="9"   name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
@@ -187,7 +200,7 @@
     </div>
   </div>
 
- </div>
+  </div>
 </body>
 
 </html>

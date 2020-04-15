@@ -18,7 +18,7 @@
 }
 
 .feedback-form__group--checkbox {
-  padding: 25px 20px 0px;
+  padding: 25px 20px 0;
 }
 
 .feedback-form__legend {
@@ -91,20 +91,10 @@
   margin-right: 84px;
   padding-bottom: 16px;
 }
-/*
-.feedback-form__label--mail::after {
-  content: "";
-  position: absolute;
-  bottom: -76px;
-  right: -121px;
-  width: 58px;
-  height: 58px;
-  background: url("../img/icon-mail.svg") no-repeat;
-}*/
 
 .feedback-form__contact {
   margin-top: 4px;
-  margin-bottom:  12px;
+  margin-bottom: 12px;
   height: 58px;
   width: 93%;
   padding-left: 20px;
@@ -116,7 +106,6 @@
   color: #000000;
   border: none;
   background-color: #f2f2f2;
-
 }
 
 .feedback-form__contact--back {
@@ -125,14 +114,15 @@
   background-position: 242px 51%;
 }
 
+
 .feedback-form__list {
   .list-reset();
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-   &--checkbox {
-   align-items: baseline;
-   }
+  &--checkbox {
+    align-items: baseline;
+  }
 }
 
 .feedback-form__legend--radio {
@@ -154,8 +144,8 @@
 .feedback-form__radio + label::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 46px;
   height: 46px;
   border: solid 5px #f2f2f2;
@@ -172,7 +162,7 @@
   height: 16px;
   border: solid 3px #333333;
   background-color: #333333;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .feedback-form__label--checkbox {
@@ -198,7 +188,6 @@
   border-radius: 5px;
   background-color: #f2f2f2;
   cursor: pointer;
-  border: none;
 }
 
 .feedback-form__checkbox:checked + label::after {
@@ -208,14 +197,14 @@
   left: 16px;
   width: 24px;
   height: 16px;
-  background: url(../img/icon-tick.svg) no-repeat;
+  background: url("../img/icon-tick.svg") no-repeat;
   background-size: contain;
-  border-color: transparent
+  border-color: transparent;
 }
 
 .feedback-form__group--textarea {
   padding: 21px 21px 41px;
-  border:  none;
+  border: none;
 }
 
 .feedback-form__textarea {
@@ -225,7 +214,7 @@
   padding-top: 8px;
   padding-left: 20px;
   font-family: inherit;
-  font-size:  18px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   letter-spacing: 0.1px;
@@ -255,11 +244,57 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .feedback-form {
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
   }
 
+  .feedback-form__group--name {
+    padding: 0;
+    width: 50%;
+    order: -1;
+  }
+
+  .feedback-form__group--radio {
+    padding: 0;
+    width: 50%;
+    order: -2;
+  }
+
+  .feedback-form__group--contact {
+    padding: 0;
+    width: 100%;
+  }
+
+  .feedback-form__contact {
+    width: 100%;
+  }
+
+  .feedback-form__list--checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feedback-form__item--checkbox {
+    padding: 0;
+    width: 35%;
+  }
+
+  .feedback-form__group--textarea {
+    margin-bottom: 50px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .feedback-submit {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback__note {
+    padding-left: 210px;
+  }
 }
