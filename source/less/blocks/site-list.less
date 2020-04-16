@@ -1,5 +1,5 @@
 .site-list {
-  .list-reset ();
+  .list-reset();
 }
 
 .site-list__item {
@@ -13,6 +13,23 @@
     font-weight: bold;
     line-height: 2.22;
     color: #ffffff;
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    width: 20%;
+    border-bottom: none;
+    box-shadow: none;
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.86;
+      color: #000000;
+    }
   }
 }

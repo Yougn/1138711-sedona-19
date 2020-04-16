@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -34,7 +36,25 @@
 .page-header__logo {
   display: flex;
   justify-content: center;
-  position: relative;
   max-height: 56px;
   background-color: #ffffff;
+
+  img {
+    z-index: 10;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+  }
 }

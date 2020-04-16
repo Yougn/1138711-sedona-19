@@ -1,20 +1,47 @@
+.search {
+  margin: 30px 0 45px;
+}
+
+.search__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .search__title {
-  padding-top: 12px;
+  margin: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
 }
 
 .search__subtitle {
-  padding: 0 27px 14px;
+  margin-top: 20px;
+  margin-bottom: 33px;
   font-size: 14px;
   line-height: 1.71;
+  color: #333333;
 }
 
 .search__button {
-  padding: 18px 47px;
+  display: block;
+  padding: 18px;
 }
 
-.search__wrapper {
-  margin-top: 50px;
+.search__map {
+  margin-top: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .search {
+    margin: 57px 0;
+  }
+
+  .search__wrapper {
+    max-width: 480px;
+  }
+
+  .search__title {
+    font-size: 30px;
+    line-height: 0.87;
+  }
 }

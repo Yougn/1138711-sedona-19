@@ -1,6 +1,29 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .page-footer__title {
-  margin-top: 27px;
+  margin-top: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
+}
+
+.page-footer__copyright {
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .page-footer__title {
+    .list-reset();
+  }
 }
