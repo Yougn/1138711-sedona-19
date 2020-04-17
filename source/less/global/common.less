@@ -30,21 +30,23 @@ a {
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  margin: -1px;
-  padding: 0;
   width: 1px;
   height: 1px;
+  margin: -1px;
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .button {
   display: inline-block;
   font-size: 21px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.24;
   color: #ffffff;
   text-align: center;
