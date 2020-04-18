@@ -1,0 +1,48 @@
+.photo-card__img {
+  display: block;
+}
+
+.photo-card__title {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.photo-card__text {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+  text-align: left;
+  color: #333333;
+}
+
+.photo-card__like {
+  display: flex;
+  align-items: center;
+}
+
+.photo-card__number {
+  margin-left: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo-card__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+  }
+}

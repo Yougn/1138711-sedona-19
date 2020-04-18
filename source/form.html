@@ -61,29 +61,29 @@
           <ul class="feedback-form__list">
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="name">ИМЯ*:</label>
-              <input class="feedback-form__input feedback-form__input--name" type="text" name="name" id="name" placeholder="Петр" required>
+              <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="name" id="name" placeholder="Петр" required>
             </li>
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="surname">ФАМИЛИЯ*:</label>
-              <input  class="feedback-form__input feedback-form__input--name" type="text" name="surname" id="surname" placeholder="Иванов" required>
+              <input  class="feedback-form__input-text feedback-form__input-text--name" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="patronymic">ОТЧЕСТВО:</label>
-              <input  class="feedback-form__input feedback-form__input--name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+              <input  class="feedback-form__input-text feedback-form__input-text--name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--contact">
           <legend class="feedback-form__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
-          <ul class="feedback-form__list">
+          <ul class="feedback-form__list feedback-form__list--contact">
             <li class="feedback-form__item feedback-form__item--contact">
-              <label class="feedback-form__label feedback-form__label--phone" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-              <input class="feedback-form__input feedback-form__input--contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
+              <label class="feedback-form__label feedback-form__label--contact" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+              <input class="feedback-form__input-text feedback-form__input-text--contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
             </li>
             <li class="feedback-form__item feedback-form__item--contact">
-              <label class="feedback-form__label feedback-form__label--mail" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-              <input class="feedback-form__input feedback-form__input--contact" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+              <label class="feedback-form__label feedback-form__label--contact" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+              <input class="feedback-form__input-text feedback-form__input-text--contact" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
@@ -92,15 +92,15 @@
           <legend class="feedback-form__legend">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list feedback-form__list--radio">
             <li class="feedback-form__item feedback-form__item--radio">
-              <input class="feedback-form__input feedback-form__input--radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
+              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
               <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
-              <input class="feedback-form__input feedback-form__input--radio  visually-hidden" type="radio" name="rating" id="negative" value="Скорее отрицательное">
+              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="negative" value="Скорее отрицательное">
               <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
-              <input  class="feedback-form__input feedback-form__input--radio  visually-hidden" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
+              <input  class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
               <label  class="feedback-form__label feedback-form__label--radio" for="nothing">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -110,19 +110,19 @@
           <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list feedback-form__list--checkbox">
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
               <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox" name="attractions" id="mountain" value="Гора-Колокол" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="mountain" value="Гора-Колокол" checked>
               <label class="feedback-form__label feedback-form__label--checkbox" for="mountain">Гора-Колокол</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox" name="attractions" id="park" value="Слайд-парк" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="park" value="Слайд-парк" checked>
               <label class="feedback-form__label feedback-form__label--checkbox" for="park">Слайд-парк</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input feedback-form__input--checkbox visually-hidden" type="checkbox" name="attractions" id="rocks" value="Красные скалы">
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="rocks" value="Красные скалы">
               <label class="feedback-form__label feedback-form__label--checkbox" for="rocks">Красные скалы</label>
             </li>
           </ul>
