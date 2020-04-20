@@ -31,3 +31,29 @@
     height: 139px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .page-wrapper {
+    height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    img {
+      max-width: 350px;
+    }
+  }
+
+  .page-wrapper::after {
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-wrapper {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-wrapper::after {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+}
