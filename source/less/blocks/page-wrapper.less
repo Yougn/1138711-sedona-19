@@ -1,11 +1,13 @@
 .page-wrapper {
   position: relative;
-  height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 
   img {
-    max-width: 280px;
+    max-width: 320px;
+    max-height: 389px;
+    padding: 84px 20px;
   }
 }
 
@@ -21,24 +23,26 @@
 }
 
 .page-wrapper--index {
-  height: 157px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 
   img {
-    max-width: 231px;
-    height: 139px;
+    max-width: 320px;
+    max-height: 159px;
+    padding: 45px 30px 65px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-wrapper {
-    height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     img {
-      max-width: 350px;
+      max-width: 768px;
+      max-height: 518px;
+      padding: 77px 154px 91px;
     }
   }
 
@@ -51,6 +55,12 @@
 @media (min-width: @desktop-width) {
   .page-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    img {
+      max-width: 1200px;
+      max-height: 518px;
+      padding: 77px 370px 91px;
+    }
   }
 
   .page-wrapper::after {
