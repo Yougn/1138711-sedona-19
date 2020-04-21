@@ -90,6 +90,16 @@
   }
 }
 
+.feedback-form__input-text:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__input-text:focus,
+.feedback-form__input-text:active {
+  border: solid 4px #e5e5e5;
+  background-color: #ffffff;
+}
+
 /*
 .feedback-form__label--phone {
   position: relative;
@@ -143,12 +153,35 @@
   border-radius: 50%;
 }
 
+.feedback-form__input-radio:hover + label::before,
+.feedback-form__input-checkbox:hover + label::before {
+  border: solid 5px #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.feedback-form__input-radio:disabled + label::before,
+.feedback-form__input-checkbox:disabled + label::before {
+  border: solid 5px #d5d5d5;
+  background-color: #d5d5d5;
+}
+
+.feedback-form__input-radio:checked:disabled + label::after {
+  opacity: 0.3;
+  border: solid 4px #333333;
+  background-color: #333333;
+}
+
+.feedback-form__input-checkbox:checked:disabled + label::after {
+  opacity: 0.3;
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
 .feedback-form__input-radio:checked + label::after {
   content: "";
   position: absolute;
   top: 16px;
-  left: 17px;
-  width: 16px;
+  left: 15px;
+  width: 15px;
   height: 16px;
   border: solid 3px #333333;
   background-color: #333333;
@@ -274,7 +307,7 @@
 
   .feedback-form__item--checkbox {
     padding: 0;
-    width: 35%;
+    width: 36%;
   }
 
   .feedback-form__group--textarea {
@@ -319,15 +352,15 @@
 
   .feedback-form__group {
     padding: 0;
+
+    &--checkbox {
+      width: 100%;
+    }
   }
 
   .feedback-form__list--checkbox {
     flex-wrap: nowrap;
     justify-content: space-between;
     .list-reset();
-  }
-
-  .feedback-form__item--checkbox {
-    width: 0%;
   }
 }
