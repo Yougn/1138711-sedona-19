@@ -16,6 +16,17 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: #82b4d3;
+
+    &:hover,
+    &:focus {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+    }
   }
 }
 
@@ -30,6 +41,30 @@
       font-weight: bold;
       line-height: 1.86;
       color: #000000;
+      background-color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: #82b4d3;
+        background-color: #ffffff;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .site-list__item--active a {
+    color: #766357;
+
+    &:hover,
+    &:focus {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
     }
   }
 }
