@@ -15,15 +15,9 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: inherit;
-}
-
-*:before {
-  box-sizing: inherit;
-}
-
-*:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -60,4 +54,18 @@ a {
   text-decoration: none;
   background-color: #82b4d3;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #669fc1;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5397be;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

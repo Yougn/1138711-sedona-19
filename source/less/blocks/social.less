@@ -10,34 +10,41 @@
   .list-reset();
 }
 
-.social__item {
+.social__link {
+  display: block;
   position: relative;
   width: 46px;
   height: 48px;
   background-color: #82b4d3;
 }
 
-.social__link {
+.social__link::after {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
-  &--twitter {
-    width: 18px;
-    height: 14px;
-    content: url("../img/icon-twitter.svg");
-  }
+.social__link--twitter::after {
+  content: "";
+  width: 19px;
+  height: 15px;
+  background: url("../img/icon-twitter.svg") center no-repeat;
+  background-size: contain;
+}
 
-  &--facebook {
-    width: 9px;
-    height: 18px;
-    content: url("../img/icon-facebook.svg");
-  }
+.social__link--facebook::after {
+  content: "";
+  width: 9px;
+  height: 19px;
+  background: url("../img/icon-facebook.svg") center no-repeat;
+  background-size: contain;
+}
 
-  &--youtube {
-    width: 20px;
-    height: 14px;
-    content: url("../img/icon-youtube.svg");
-  }
+.social__link--youtube::after {
+  content: "";
+  width: 20px;
+  height: 14px;
+  background: url("../img/icon-youtube.svg") center no-repeat;
+  background-size: contain;
 }

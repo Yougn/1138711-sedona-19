@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
               <a href="photo.html">ФОТО И ВИДЕО</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="form.html">ФОРМА ОТЗЫВА</a>
+              <a>ФОРМА ОТЗЫВА</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru">HTML ACADEMY</a>
@@ -32,10 +33,13 @@
           </ul>
         </div>
 
-        <picture class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город Седона">
-        </picture>
-
+        <a href="index.html">
+          <picture class="page-header__logo">
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
+          </picture>
+        </a>
       </nav>
 
     </header>
@@ -43,7 +47,7 @@
   <main class="page-main">
 
     <div class="page-wrapper page-wrapper--index">
-      <img src="img/text-sedona.svg" width="1200" height="300" alt="Добро пожаловать в Седону!">
+      <img src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону!">
     </div>
 
     <section class="feedback">
@@ -91,7 +95,7 @@
           <legend class="feedback-form__legend">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list feedback-form__list--radio">
             <li class="feedback-form__item feedback-form__item--radio">
-              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" disabled checked>
+              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
               <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
@@ -109,7 +113,7 @@
           <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list feedback-form__list--checkbox">
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" disabled checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
               <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
