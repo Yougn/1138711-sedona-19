@@ -33,13 +33,15 @@
           </ul>
         </div>
 
-        <a href="index.html">
-          <picture class="page-header__logo">
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Город Седона">
-          </picture>
-        </a>
+        <div class="page-header__logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <img src="img/logo-sedona.svg" width="102" height="84" alt="Город Седона">
+            </picture>
+          </a>
+        </div>
+
       </nav>
 
     </header>
@@ -61,7 +63,7 @@
 
         <fieldset class="feedback-form__group feedback-form__group--name">
           <legend class="feedback-form__legend">ПРЕДСТАВЬТЕСЬ:</legend>
-          <ul class="feedback-form__list">
+          <ul class="feedback-form__list feedback-form__list--name">
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="name">ИМЯ*:</label>
               <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="name" id="name" placeholder="Петр" required>
@@ -78,11 +80,11 @@
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--contact">
-          <legend class="feedback-form__legend">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
           <ul class="feedback-form__list feedback-form__list--contact">
             <li class="feedback-form__item feedback-form__item--contact">
               <label class="feedback-form__label feedback-form__label--contact" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
-              <input class="feedback-form__input-text feedback-form__input-text--contact" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
+              <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--phone" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
             </li>
             <li class="feedback-form__item feedback-form__item--contact">
               <label class="feedback-form__label feedback-form__label--contact" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
