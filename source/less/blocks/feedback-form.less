@@ -87,6 +87,7 @@
     height: 58px;
     width: 100%;
     padding-left: 20px;
+    background: linear-gradient(to right, #f2f2f2 79%, #e7e7e7 79%, #e7e7e7 100%);
   }
 }
 
@@ -100,42 +101,33 @@
   background-color: #ffffff;
 }
 
-.feedback-form__input-text--phone {
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  background-position: center right 5%;
-  background-color: green;
-}
-
-/*
 .feedback-form__label--phone {
   position: relative;
-  margin-right: 70px;
 }
 
 .feedback-form__label--phone::after {
   content: "";
   position: absolute;
-  bottom: -74px;
-  right: -111px;
-  width: 58px;
-  height: 58px;
+  top: 48px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
   background: url("../img/icon-phone.svg") no-repeat;
 }
 
 .feedback-form__label--mail {
   position: relative;
-  margin-right: 84px;
-  padding-bottom: 16px;
 }
 
-.feedback-form__contact--back {
+.feedback-form__label--mail::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
   background: url("../img/icon-mail.svg") no-repeat;
-  background-color: #f2f2f2;
-  background-position: 242px 51%;
 }
-*/
 
 .feedback-form__label--radio {
   position: relative;
@@ -310,6 +302,10 @@
     border-left: 1px solid #f2f2f2;
   }
 
+  .feedback-form__input-text--contact {
+    background: linear-gradient(to right, #f2f2f2 91%, #e7e7e7 91%, #e7e7e7 100%);
+  }
+
   .feedback-form__list--checkbox {
     display: flex;
     flex-direction: row;
@@ -364,6 +360,7 @@
 
   .feedback-form__input-text--contact {
     flex-grow: 1;
+    background: linear-gradient(to right, #f2f2f2 82%, #e7e7e7 82%, #e7e7e7 100%);
   }
 
   .feedback-form__group {
