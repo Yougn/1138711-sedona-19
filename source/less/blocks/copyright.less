@@ -11,20 +11,17 @@
   height: 34px;
 }
 
-.copyright__link::after {
-  display: block;
+.copyright__icon {
   position: absolute;
   top: 10px;
   right: 0;
-  width: 27px;
-  height: 34px;
-  content: url("../img/logo-htmlacademy.svg");
-}
 
-.copyright__link:hover::after {
-  content: url("../img/logo-htmlacademy-hover.svg");
-}
+  &:hover,
+  &:focus {
+    fill: #82b4d3;
+  }
 
-.copyright__link:active::after {
-  content: url("../img/logo-htmlacademy-active.svg");
+  &:active {
+    fill: #b3b3b3;
+  }
 }
