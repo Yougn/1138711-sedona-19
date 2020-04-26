@@ -65,4 +65,38 @@
     font-size: 21px;
     line-height: 1.24;
   }
+
+  .advice__item {
+    position: relative;
+
+    &--housing::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 50px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../img/icon-house-tablet.svg");
+    }
+
+    &--souvenir::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 50px;
+      width: 64px;
+      height: 75px;
+      background-image: url("../img/icon-gift-tablet.svg");
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 50px;
+      width: 77px;
+      height: 68px;
+      background-image: url("../img/icon-burger-tablet.svg");
+    }
+  }
 }

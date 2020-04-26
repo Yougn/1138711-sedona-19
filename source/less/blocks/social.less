@@ -16,33 +16,26 @@
   width: 46px;
   height: 48px;
   background-color: #82b4d3;
+
+  &:hover,
+  &:focus {
+    background-color: #669fc1;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #5397be;
+  }
 }
 
-.social__link::after {
+.social__icon {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
-.social__link--twitter::after {
-  width: 19px;
-  height: 15px;
-  background: url("../img/icon-twitter.svg") center no-repeat;
-  background-size: contain;
-}
-
-.social__link--facebook::after {
-  width: 9px;
-  height: 19px;
-  background: url("../img/icon-facebook.svg") center no-repeat;
-  background-size: contain;
-}
-
-.social__link--youtube::after {
-  width: 20px;
-  height: 14px;
-  background: url("../img/icon-youtube.svg") center no-repeat;
-  background-size: contain;
+  &:active {
+    fill: rgba(#ffffff, 0.3);
+  }
 }

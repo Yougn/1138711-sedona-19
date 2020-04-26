@@ -10,6 +10,25 @@
 </head>
 
 <body>
+
+  <svg style="display: none">
+    <symbol viewBox="0 0 22 22" id="like-icon">
+      <path d="M12.38 3.65l-.63 2.92L11.22 9h8.68v2.06L17 18H8V8.03L8.01 8l4.37-4.36M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 00-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.04V9z"/>
+    </symbol>
+    <symbol viewBox="0 0 16 20" id="replay-icon">
+       <path d="M8 4V0L3 5l5 5V6a6 6 0 11-6 6H0a8 8 0 108-8z"/>
+    </symbol>
+    <symbol viewBox="0 0 20 20" id="fullscreen-icon">
+      <path d="M0 0v6h3V3h3V0H3zM3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zM17 17h-3v3h6v-6h-3z"/>
+    </symbol>
+    <symbol viewBox="0 0 32 20" id="subtitles-icon">
+      <path  d="M29 0H3a3 3 0 00-3 3v14a3 3 0 003 3h26a3 3 0 003-3V3a3 3 0 00-3-3zM14.4 15.85c-.54.11-1.1.17-1.67.17-.7 0-1.36-.1-1.98-.32-.62-.22-1.17-.57-1.65-1.05s-.85-1.1-1.13-1.86A8.15 8.15 0 017.55 10c0-1.13.16-2.08.47-2.85a5.2 5.2 0 011.23-1.86c.5-.46 1.06-.8 1.68-1 .61-.2 1.23-.31 1.85-.31.66 0 1.22.04 1.68.13.45.1.83.2 1.13.32l-.45 1.92c-.25-.12-.56-.21-.9-.27A8.24 8.24 0 0012.97 6c-.91 0-1.65.33-2.2.98-.56.65-.84 1.66-.84 3.03 0 .6.07 1.14.2 1.63.13.5.33.91.6 1.26.27.35.61.62 1.01.81.4.2.87.3 1.4.3.5 0 .91-.06 1.26-.16.34-.1.63-.22.89-.38l.46 1.84c-.35.25-.8.43-1.35.54zm8.7 0c-.54.11-1.1.17-1.68.17-.7 0-1.35-.1-1.97-.32-.63-.22-1.18-.57-1.65-1.05s-.85-1.1-1.13-1.86a8.13 8.13 0 01-.42-2.79c0-1.13.15-2.08.47-2.85a5.2 5.2 0 011.22-1.86c.5-.46 1.06-.8 1.68-1 .62-.2 1.23-.31 1.85-.31.66 0 1.22.04 1.68.13.46.1.84.2 1.13.32l-.44 1.91c-.26-.12-.56-.2-.9-.26A8.57 8.57 0 0021.67 6c-.92 0-1.65.33-2.2.98-.56.65-.84 1.66-.84 3.03 0 .6.07 1.14.2 1.63.13.5.33.91.6 1.26.27.35.6.62 1 .81.41.2.88.3 1.4.3.5 0 .92-.06 1.26-.16.34-.1.64-.22.9-.38l.46 1.84c-.35.25-.8.43-1.35.54z"/>
+    </symbol>
+    <symbol viewBox="0 0 27 34" id="copyright-icon">
+      <path d="M13.62.02L13.47 0 0 1.41v24.66l13.47 8.02L26.9 26.1l.05-.03V1.42L13.62.01zm11.4 12.1L13.49 5.34v-.1l-.08.05-.1-.06v.11L1.94 12.12V3.15l11.54-1.21 11.55 1.2v8.99zM13.4 6.8l11.52 6.71-4.48 2.64-7.09-4.22-.01 1.41 5.9 3.52-.86.5-5.03-2.99-.01 1.42 3.82 2.27-.78.52-3.03-1.78-.01 1.41 1.85 1.1-1.8 1.07-11.36-6.75L13.41 6.8zM1.93 15.13l11.4 6.79.02 1.04-7.94-4.73-.02 1.42 7.98 4.8.02 1.07-7.97-4.74-.01 1.41 8.02 4.83.04.02 8.15-4.87-.02-5.18 3.42-2.03v10.02l-11.55 6.87-11.54-6.87v-9.85z"/>
+    </symbol>
+  </svg>
+
   <div class="container">
 
     <header class="page-header">
@@ -74,9 +93,12 @@
                 <p class="photo-card__text">Автор фото:<span>Борис</span></p>
               </div>
               <p class="photo-card__like">
-                <span class="photo-card__toggle"><span class="visually-hidden">Мне нравится</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="21px" fill="#b3b3b3" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve"><g id="Page-1"><g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)"><path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/></g></g></g></svg>
-              </span>
+                <span class="photo-card__toggle">
+                  <span class="visually-hidden">Мне нравится</span>
+                  <svg class="photo-card__icon" width="22" height="22">
+                    <use xlink:href="#like-icon"></use>
+                  </svg>
+                </span>
                 <span class="photo-card__number">1350</span>
               </p>
             </div>
@@ -95,9 +117,12 @@
                 <p class="photo-card__text">Автор фото:<span>Сергей</span></p>
               </div>
               <p class="photo-card__like">
-                <span class="photo__toggle"><span class="visually-hidden">Мне нравится</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="21px" fill="#b3b3b3" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve"><g id="Page-1"><g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)"><path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/></g></g></g></svg>
-              </span>
+                <span class="photo-card__toggle">
+                  <span class="visually-hidden">Мне нравится</span>
+                  <svg class="photo-card__icon" width="22" height="22">
+                    <use xlink:href="#like-icon"></use>
+                  </svg>
+                </span>
                 <span class="photo-card__number">143</span>
               </p>
             </div>
@@ -116,9 +141,12 @@
                 <p class="photo-card__text">Автор фото:<span>Петр</span></p>
               </div>
               <p class="photo-card__like">
-                <span class="photo-card__toggle"><span class="visually-hidden">Мне нравится</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="21px" fill="#b3b3b3" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve" border="none" background="transparent"><g id="Page-1"><g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)"><path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/></g></g></g></svg>
-              </span>
+                <span class="photo-card__toggle">
+                  <span class="visually-hidden">Мне нравится</span>
+                  <svg class="photo-card__icon" width="22" height="22">
+                    <use xlink:href="#like-icon"></use>
+                  </svg>
+                </span>
                 <span class="photo-card__number">96</span>
               </p>
             </div>
@@ -137,9 +165,12 @@
                 <p class="photo-card__text">Автор фото: Антон</p>
               </div>
               <p class="photo-card__like">
-                <span class="photo-card__toggle"><span class="visually-hidden">Мне нравится</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="21px" fill="#b3b3b3" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve"><g id="Page-1"><g id="Core" transform="translate(-295.000000, -464.000000)"><g id="thumb-up" transform="translate(295.000000, 464.000000)"><path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/></g></g></g></svg>
-              </span>
+                <span class="photo-card__toggle">
+                  <span class="visually-hidden">Мне нравится</span>
+                  <svg class="photo-card__icon" width="22" height="22">
+                    <use xlink:href="#like-icon"></use>
+                  </svg>
+                </span>
                 <span class="photo-card__number">254</span>
               </p>
             </div>
@@ -167,19 +198,19 @@
                 <div class="video__toggle"></div>
               </div>
             </div>
-            <div class="video__replay">
-              <span>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve"><path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/></svg>
+            <div class="video__replay replay">
+              <span class="replay__item">
+                <svg class="replay__icon" width="16" height="20"><use xlink:href="#replay-icon"></use></svg>
               </span>
             </div>
-            <div class="video__fullscreen">
-              <span>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><g><polygon fill="#454545" points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/><polygon fill="#454545" points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/><polygon fill="#454545" points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/><polygon fill="#454545" points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/></g></svg>
+            <div class="video__fullscreen fullscreen">
+              <span class="fullscreen__item">
+                <svg class="fullscreen__icon" width="20" height="20"><use xlink:href="#fullscreen-icon"></use></svg>
               </span>
             </div>
-            <div class="video__subtitles">
-              <span>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve"><path fill="#454545" d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"/></svg>
+            <div class="video__subtitles subtitles">
+              <span class="subtitles__item">
+                <svg class="subtitles__icon" width="32" height="20"><use xlink:href="#subtitles-icon"></use></svg>
               </span>
             </div>
           </div>
@@ -196,21 +227,33 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Мы в Твиттере</span></a>
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.66" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.28.15c1.74-.48 3.08.27 3.69 1.15.7-.22 1.37-.47 2.07-.69 0 .84-.54 1.48-.88 1.73.7.17 1.34-.48 1.34-.48a2.9 2.9 0 01-1.61 1.98c-.24 6.59-3.27 10.95-10.38 10.82h-.46c-.43 0-4.3-.45-5.05-1.84 2.34.19 4.01-.42 4.83-1.15-.98-.3-2.76-.47-3.06-2.88.36.1.58.22 1.22.11C1.76 8.07.4 7.37.46 5.22c.3.32 1.1.52 1.38.46C1.12 5.44-.19 2.4.92.84 2.8 2.65 4.77 4.36 8.3 4.53c.22-2.24 1.17-3.74 3-4.38z"/></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="8.67" height="18.94"><path d="M6.28 3.36h2.4V0H5.8C2.65.18 1.54 2.39 1.94 6.11H0v3.52h1.96v9.31H5.8v-9.3h2.85V6.1H5.8c-.03-1.04-.04-2.4.49-2.75z"/></svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на Ютубе</span></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на Ютубе</span>
+            <svg class="social__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="19.98" height="14.02" fill="#fff"><path d="M17.14 0H2.84A2.84 2.84 0 000 2.83v8.35a2.84 2.84 0 002.83 2.83h14.32a2.84 2.84 0 002.83-2.83V2.84A2.84 2.84 0 0017.14 0zM7.04 10.4V3.61l6.76 3.39-6.76 3.38z"/></svg>
+          </a>
         </li>
       </ul>
     </div>
 
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">
-        РАЗРАБОТАНО:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        РАЗРАБОТАНО
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__icon" width="27" height="34"><use xlink:href="#copyright-icon"></use></svg>
+        </a>
       </p>
     </div>
 

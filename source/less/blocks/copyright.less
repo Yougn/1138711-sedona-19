@@ -11,11 +11,17 @@
   height: 34px;
 }
 
-.copyright__link::after {
+.copyright__icon {
   position: absolute;
   top: 10px;
   right: 0;
-  width: 27px;
-  height: 34px;
-  content: url("../img/logo-htmlacademy.svg");
+
+  &:hover,
+  &:focus {
+    fill: #82b4d3;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
 }
