@@ -31,7 +31,7 @@
             <li class="site-list__item">
               <a href="photo.html">ФОТО И ВИДЕО</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a>ФОРМА ОТЗЫВА</a>
             </li>
             <li class="site-list__item">
@@ -69,7 +69,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="feedback-form__group feedback-form__group--name">
-          <legend class="feedback-form__legend">ПРЕДСТАВЬТЕСЬ:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--name">ПРЕДСТАВЬТЕСЬ:</legend>
           <ul class="feedback-form__list feedback-form__list--name">
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="name">ИМЯ*:</label>
@@ -87,21 +87,21 @@
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--contact">
-          <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ*:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
           <ul class="feedback-form__list feedback-form__list--contact">
             <li class="feedback-form__item feedback-form__item--contact">
-              <label class="feedback-form__label feedback-form__label--phone" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+              <label class="feedback-form__label feedback-form__label--contact" for="telephone"><span class="feedback-form__mark">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
               <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--phone" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
             </li>
             <li class="feedback-form__item feedback-form__item--contact">
-              <label class="feedback-form__label feedback-form__label--mail" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+              <label class="feedback-form__label feedback-form__label--contact" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
               <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--mail" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--radio">
-          <legend class="feedback-form__legend">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--radio">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list feedback-form__list--radio">
             <li class="feedback-form__item feedback-form__item--radio">
               <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
@@ -113,13 +113,13 @@
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
               <input  class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
-              <label  class="feedback-form__label feedback-form__label--radio" for="nothing">Затрудняюсь ответить</label>
+              <label  class="feedback-form__label feedback-form__label--radio feedback-form__label--last" for="nothing">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="feedback-form__group feedback-form__group--checkbox">
-          <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ<br> ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list feedback-form__list--checkbox">
             <li class="feedback-form__item feedback-form__item--checkbox">
               <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
@@ -144,7 +144,7 @@
           <legend class="feedback-form__legend feedback-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
           <textarea class="feedback-form__textarea feedback-form__textarea--text" rows="9"   name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
           <div class="feedback-form__submit">
-            <button class="button feedback-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <button class="button feedback-form__btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <p class="feedback-form__note">&ast; &ndash;ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
           </div>
         </fieldset>

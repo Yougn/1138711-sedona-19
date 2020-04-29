@@ -23,6 +23,10 @@
   color: #333333;
 }
 
+.search__transfer {
+  display: none;
+}
+
 .search__button {
   display: block;
   padding: 18px;
@@ -37,7 +41,8 @@
 
 @media (min-width: @tablet-width) {
   .search {
-    margin: 57px 0;
+    margin-top: 72px;
+    margin-bottom: 0;
   }
 
   .search__wrapper {
@@ -50,16 +55,25 @@
   }
 
   .search__subtitle {
-    padding: 0 31px;
+    margin-top: 31px;
+    margin-bottom: 41px;
+  }
+
+  .search__transfer {
+    display: block;
+  }
+
+  .search__button {
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .search__wrapper {
-    max-width: 434px;
+  .search__subtitle {
+    margin-bottom: 44px;
   }
 
-  .search__subtitle {
-    padding: 0 19px;
+  .search__button {
+    margin-bottom: 65px;
   }
 }
