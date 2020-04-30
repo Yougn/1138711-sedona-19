@@ -21,9 +21,14 @@
   color: #333333;
 }
 
+.photo-card__info {
+  margin-bottom: 5px;
+}
+
 .photo-card__like {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .photo-card__icon {
@@ -48,8 +53,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 20px 9px;
     background-color: #f2f2f2;
+
+    &--small {
+      padding: 0 29px 9px 20px;
+    }
+  }
+
+  .photo-card__like {
+    padding-top: 17px;
+  }
+
+  .photo-card__number {
+    margin-left: 9px;
   }
 
   .photo-card__icon {
@@ -60,6 +77,7 @@
 @media (min-width: @desktop-width) {
   .photo-card__description {
     margin-top: -80px;
+    margin-bottom: 9px;
     padding: 0 20px;
     color: #ffffff;
     background: transparent;
@@ -71,5 +89,9 @@
 
   .photo-card__icon {
     fill: #ffffff;
+  }
+
+  .photo-card__like--small {
+    padding-right: 10px;
   }
 }
