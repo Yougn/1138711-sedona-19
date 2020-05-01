@@ -11,11 +11,9 @@
 
 <body>
 
-  <svg style="display: none">
-    <symbol viewBox="0 0 27 34" id="copyright-icon">
-      <path d="M13.62.02L13.47 0 0 1.41v24.66l13.47 8.02L26.9 26.1l.05-.03V1.42L13.62.01zm11.4 12.1L13.49 5.34v-.1l-.08.05-.1-.06v.11L1.94 12.12V3.15l11.54-1.21 11.55 1.2v8.99zM13.4 6.8l11.52 6.71-4.48 2.64-7.09-4.22-.01 1.41 5.9 3.52-.86.5-5.03-2.99-.01 1.42 3.82 2.27-.78.52-3.03-1.78-.01 1.41 1.85 1.1-1.8 1.07-11.36-6.75L13.41 6.8zM1.93 15.13l11.4 6.79.02 1.04-7.94-4.73-.02 1.42 7.98 4.8.02 1.07-7.97-4.74-.01 1.41 8.02 4.83.04.02 8.15-4.87-.02-5.18 3.42-2.03v10.02l-11.55 6.87-11.54-6.87v-9.85z"/>
-    </symbol>
-  </svg>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <div class="container">
 
@@ -73,15 +71,15 @@
           <ul class="feedback-form__list feedback-form__list--name">
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="name">ИМЯ*:</label>
-              <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="name" id="name" placeholder="Петр" required>
+              <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="name" id="name" placeholder="Петр" required="">
             </li>
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="surname">ФАМИЛИЯ*:</label>
-              <input  class="feedback-form__input-text feedback-form__input-text--name" type="text" name="surname" id="surname" placeholder="Иванов" required>
+              <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="surname" id="surname" placeholder="Иванов" required="">
             </li>
             <li class="feedback-form__item feedback-form__item--name">
               <label class="feedback-form__label" for="patronymic">ОТЧЕСТВО:</label>
-              <input  class="feedback-form__input-text feedback-form__input-text--name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+              <input class="feedback-form__input-text feedback-form__input-text--name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -91,11 +89,11 @@
           <ul class="feedback-form__list feedback-form__list--contact">
             <li class="feedback-form__item feedback-form__item--contact">
               <label class="feedback-form__label feedback-form__label--contact" for="telephone"><span class="feedback-form__mark">КОНТАКТНЫЙ</span> ТЕЛЕФОН*:</label>
-              <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--phone" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required>
+              <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--phone" type="tel" name="telephone" id="telephone" placeholder="Введите телефон" required="">
             </li>
             <li class="feedback-form__item feedback-form__item--contact">
               <label class="feedback-form__label feedback-form__label--contact" for="e-mail">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-              <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--mail" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
+              <input class="feedback-form__input-text feedback-form__input-text--contact feedback-form__input-text--mail" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required="">
             </li>
           </ul>
         </fieldset>
@@ -104,7 +102,7 @@
           <legend class="feedback-form__legend feedback-form__legend--radio">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <ul class="feedback-form__list feedback-form__list--radio">
             <li class="feedback-form__item feedback-form__item--radio">
-              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked>
+              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="positive" value="Скорее положительное" checked="">
               <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
@@ -112,8 +110,8 @@
               <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--radio">
-              <input  class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
-              <label  class="feedback-form__label feedback-form__label--radio feedback-form__label--last" for="nothing">Затрудняюсь ответить</label>
+              <input class="feedback-form__input-radio  visually-hidden" type="radio" name="rating" id="nothing" value="Затрудняюсь ответить">
+              <label class="feedback-form__label feedback-form__label--radio feedback-form__label--last" for="nothing">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -122,15 +120,15 @@
           <legend class="feedback-form__legend feedback-form__legend--checkbox">ПОСЕЩЕННЫЕ<br> ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <ul class="feedback-form__list feedback-form__list--checkbox">
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="bridge" value="Мост Дьявола" checked="">
               <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="mountain" value="Гора-Колокол" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="mountain" value="Гора-Колокол" checked="">
               <label class="feedback-form__label feedback-form__label--checkbox" for="mountain">Гора-Колокол</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
-              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="park" value="Слайд-парк" checked>
+              <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" name="attractions" id="park" value="Слайд-парк" checked="">
               <label class="feedback-form__label feedback-form__label--checkbox" for="park">Слайд-парк</label>
             </li>
             <li class="feedback-form__item feedback-form__item--checkbox">
@@ -142,7 +140,7 @@
 
         <fieldset class="feedback-form__group feedback-form__group--textarea">
           <legend class="feedback-form__legend feedback-form__legend--textarea">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-          <textarea class="feedback-form__textarea feedback-form__textarea--text" rows="9"   name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback-form__textarea feedback-form__textarea--text" rows="9" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
           <div class="feedback-form__submit">
             <button class="button feedback-form__btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <p class="feedback-form__note">&ast; &ndash;ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
