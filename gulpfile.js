@@ -20,16 +20,17 @@ var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
-  .pipe(plumber())
-  .pipe(sourcemap.init())
-  .pipe(less())
-  .pipe(postcss([
-  autoprefixer()
-  ]))
-  .pipe(csso())
-  /*.pipe(rename("style.min.css"))*/
-  .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"));
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("sprite", function () {
@@ -38,16 +39,17 @@ gulp.task("sprite", function () {
   inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
   .pipe(posthtml([
   include()
   ]))
   .pipe(gulp.dest("build"));
 });
+
 
 gulp.task("minify", () => {
   return gulp.src("source/*.html")
