@@ -113,9 +113,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html",
-  "minify",
-  "compress"
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
