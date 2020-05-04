@@ -8,6 +8,8 @@ var server = require("browser-sync").create();
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var htmlmin = require("gulp-htmlmin");
+var minify = require("gulp-minify");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -25,6 +27,7 @@ gulp.task("css", function () {
   autoprefixer()
   ]))
   .pipe(csso())
+  .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"));
 });
@@ -35,7 +38,7 @@ gulp.task("sprite", function () {
   inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
@@ -44,6 +47,18 @@ gulp.task("html", function () {
   include()
   ]))
   .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify", () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("compress", function() {
+  gulp.src(["source/js/*.js"])
+    .pipe(minify())
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("images", function () {
@@ -96,7 +111,9 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
- ));
+  "html",
+  "minify",
+  "compress"
+));
 
- gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("build", "server"));
