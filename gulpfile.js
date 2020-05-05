@@ -11,6 +11,8 @@ var autoprefixer = require("autoprefixer");
 var htmlmin = require("gulp-htmlmin");
 var minify = require("gulp-minify");
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
+var minify = require("gulp-minify");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -113,7 +115,9 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "minify",
+  "compress"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
