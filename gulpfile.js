@@ -8,6 +8,8 @@ var server = require("browser-sync").create();
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var htmlmin = require("gulp-htmlmin");
+var minify = require("gulp-minify");
 var csso = require("gulp-csso");
 var htmlmin = require("gulp-htmlmin");
 var minify = require("gulp-minify");
@@ -20,15 +22,17 @@ var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
-  .pipe(plumber())
-  .pipe(sourcemap.init())
-  .pipe(less())
-  .pipe(postcss([
-  autoprefixer()
-  ]))
-  .pipe(csso())
-  .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"));
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"));
 });
 
 gulp.task("sprite", function () {
@@ -41,7 +45,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
   .pipe(posthtml([
   include()
   ]))
