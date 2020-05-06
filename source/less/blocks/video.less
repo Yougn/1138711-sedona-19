@@ -13,6 +13,7 @@
   margin-top: -45px;
   display: flex;
   flex-wrap: wrap;
+  align-items: start;
   background-color: #f2f2f2;
 }
 
@@ -27,7 +28,7 @@
   position: relative;
   height: 4px;
   width: 100%;
-  background-color: rgba(#ffffff, 0.2);
+  background-color: rgba(@white, 0.2);
 }
 
 .video__toggle {
@@ -36,23 +37,35 @@
   left: 40px;
   width: 10px;
   height: 10px;
-  background-color: rgba(#ffffff, 1);
+  background-color: rgba(@white, 1);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .video__replay {
-  margin-left: 24px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .video__fullscreen {
   order: 2;
-  margin-right: 23px;
+  margin-right: 17px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .video__subtitles {
-  margin-right: 31px;
+  margin-right: 20px;
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .video__replay .replay__icon,
@@ -72,18 +85,12 @@
 
 @media (min-width: @tablet-width) {
   .video {
-    margin-top: 38px;
-    margin-bottom: 40px;
+    margin: 38px 0 40px;
   }
 
   .video__wrapper {
     max-width: 648px;
     margin: 0 auto;
-  }
-
-  .video__img {
-    width: 100%;
-    height: auto;
   }
 
   .video__controls {
@@ -98,41 +105,36 @@
 
   .video__range {
     .list-reset();
-    width: 74%;
+    order: -1;
+    width: 72%;
     height: 93px;
     padding: 44px;
-    order: -1;
   }
 
   .video__scale {
     position: relative;
     height: 4px;
     width: 100%;
-    background-color: rgba(#ffffff, 0.2);
   }
 
   .video__toggle {
     left: 109px;
-    background-color: rgba(#ffffff, 1);
   }
 
   .video__replay {
-    margin-left: 34px;
+    margin-left: 27px;
     order: -2;
   }
 
-  .video__fullscreen {
-    margin-right: 40px;
-  }
-
   .video__subtitles {
-    margin-right: 26px;
+    margin-left: 0;
+    margin-right: 17px;
   }
 
   .video__replay .replay__icon,
   .video__fullscreen .fullscreen__icon,
   .video__subtitles .subtitles__icon {
-    fill: #ffffff;
+    fill: @white;
 
     &:hover,
     &:focus {
@@ -147,11 +149,18 @@
 
 @media (min-width: @desktop-width) {
   .video {
-    margin-bottom: 85px;
+    margin: 0 0 85px;
   }
 
   .video__wrapper {
     max-width: 800px;
-    margin: 0 auto;
+  }
+
+  .video__range {
+    width: 77%;
+  }
+
+  .video__subtitles {
+    margin-left: 0;
   }
 }

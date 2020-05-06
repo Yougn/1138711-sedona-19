@@ -1,11 +1,10 @@
 .search {
-  margin: 30px 0 45px;
+  margin: 43px 0 40px;
 }
 
 .search__wrapper {
   max-width: 280px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 47px;
 }
 
 .search__title {
@@ -16,8 +15,7 @@
 }
 
 .search__subtitle {
-  margin-top: 20px;
-  margin-bottom: 33px;
+  margin: 20px 0 33px;
   font-size: 14px;
   line-height: 1.71;
   color: #333333;
@@ -33,16 +31,30 @@
 }
 
 .search__map {
-  z-index: 1;
-  width: 100%;
+  position: relative;
   height: 350px;
-  overflow: hidden;
+
+  .search__ifr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .search__pict {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .search {
-    margin-top: 72px;
-    margin-bottom: 0;
+    margin: 72px 0 0;
   }
 
   .search__wrapper {
@@ -55,8 +67,7 @@
   }
 
   .search__subtitle {
-    margin-top: 31px;
-    margin-bottom: 41px;
+    margin: 31px 0 41px;
   }
 
   .search__transfer {

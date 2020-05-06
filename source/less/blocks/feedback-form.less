@@ -114,7 +114,7 @@
 
 .feedback-form__input-text:focus,
 .feedback-form__input-text:active {
-  border: 4px solid #e5e5e5;
+  border: 0 solid #e5e5e5;
   background-color: @white;
 }
 
@@ -190,7 +190,9 @@
 }
 
 .feedback-form__input-radio:hover + label::before,
-.feedback-form__input-checkbox:hover + label::before {
+.feedback-form__input-radio:focus + label::before,
+.feedback-form__input-checkbox:hover + label::before,
+.feedback-form__input-checkbox:focus + label::before {
   border: 5px solid  #e5e5e5;
   background-color: #e5e5e5;
 }
@@ -424,6 +426,7 @@
 
     &--contact {
       flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &--checkbox {

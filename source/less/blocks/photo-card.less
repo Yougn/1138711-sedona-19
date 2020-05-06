@@ -2,13 +2,16 @@
   display: block;
 }
 
+.photo-card__info {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
 .photo-card__title {
   margin: 0;
   padding-top: 20px;
   font-size: 14px;
   font-weight: bold;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .photo-card__text {
@@ -17,18 +20,13 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;
-  text-align: left;
   color: #333333;
 }
 
-.photo-card__info {
-  margin-bottom: 5px;
-}
-
 .photo-card__like {
+  margin: 0;
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 .photo-card__icon {
@@ -51,6 +49,7 @@
 
   .photo-card__description {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 9px;
@@ -77,21 +76,29 @@
 @media (min-width: @desktop-width) {
   .photo-card__description {
     margin-top: -80px;
-    margin-bottom: 9px;
-    padding: 0 20px;
-    color: #ffffff;
-    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    opacity: 0.3;
+
+    &--road {
+      padding-right: 37px;
+    }
+  }
+
+  .photo-card__info {
+    background-color: rgba(#000000, 0.3);
+  }
+
+  .photo-card__title {
+    color: rgba(255, 255, 255, 1);
   }
 
   .photo-card__text {
-    color: #ffffff;
+    color: @white;
+    opacity: 1;
   }
 
   .photo-card__icon {
     fill: #ffffff;
-  }
-
-  .photo-card__like--small {
-    padding-right: 10px;
   }
 }
