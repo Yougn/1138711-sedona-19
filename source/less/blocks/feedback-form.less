@@ -76,6 +76,7 @@
   font-weight: bold;
   line-height: 1.44;
   text-align: left;
+  letter-spacing: -1px;
   color: @black;
   border: none;
   background-color: #f2f2f2;
@@ -233,7 +234,8 @@
 }
 
 .feedback-form__btn {
-  padding: 16px 47px;
+  padding: 16px 39px;
+  letter-spacing: -1px;
 }
 
 .feedback-form__note {
@@ -242,8 +244,11 @@
 
 .feedback-form__input-text::placeholder,
 .feedback-form__textarea::placeholder {
-  color: @black;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.44;
+  text-align: left;
+  color: @black;
   opacity: 1;
 }
 
@@ -310,7 +315,7 @@
 
     &--checkbox {
       margin-bottom: 47px;
-      padding: 0 65px;
+      padding: 0 60px;
     }
 
     &--textarea {
@@ -368,8 +373,9 @@
   }
 
   .feedback-form__btn {
-    padding: 14px 70px;
-  }
+    padding: 15px 67px;
+    letter-spacing: -2px;
+ }
 
   .feedback-form__note {
     display: block;
@@ -410,6 +416,10 @@
     &--contact {
       padding-left: 0;
       padding-right: 15px;
+    }
+
+    &--mail {
+      padding-right: 24px;
     }
 
     &--checkbox {
