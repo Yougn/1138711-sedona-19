@@ -52,16 +52,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 9px;
+    padding: 10px 20px;
     background-color: #f2f2f2;
+  }
 
-    &--small {
-      padding: 0 29px 9px 20px;
-    }
+  .photo-card__title {
+    padding-top: 10px;
+  }
+
+  .photo-card__text {
+    padding-top: 1px;
   }
 
   .photo-card__like {
-    padding-top: 17px;
+    padding-top: 5px;
+
+    &--small {
+      padding-right: 10px;
+    }
+
+    &--road {
+      padding-right: 15px;
+    }
   }
 
   .photo-card__number {
@@ -74,31 +86,36 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo-card {
+    position: relative;
+  }
+
   .photo-card__description {
-    margin-top: -80px;
-    color: rgba(255, 255, 255, 1);
-    background-color: black;
-    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
 
     &--road {
       padding-right: 37px;
     }
   }
 
-  .photo-card__info {
-    background-color: rgba(#000000, 0.3);
-  }
-
   .photo-card__title {
-    color: rgba(255, 255, 255, 1);
+    color: @white;
   }
 
   .photo-card__text {
     color: @white;
-    opacity: 1;
+  }
+
+  .photo-card__like {
+    padding-right: 0;
   }
 
   .photo-card__icon {
-    fill: #ffffff;
+    fill: @white;
   }
 }
