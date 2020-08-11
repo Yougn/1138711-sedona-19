@@ -982,6 +982,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  cursor: pointer;
 }
 .photo-card__icon {
   width: 22px;
@@ -1025,12 +1026,20 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .photo-card {
+    position: relative;
+  }
+
   .photo-card__description {
-    margin-top: -80px;
-    margin-bottom: 9px;
-    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: #ffffff;
-    background: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .photo-card__description--road {
+    padding-right: 37px;
   }
   .photo-card__text {
     color: #ffffff;
@@ -1068,7 +1077,7 @@ img {
     margin-top: 35px;
     margin-bottom: 76px;
   }
-  .presetation__title {
+  .presentation__title {
     font-size: 30px;
     line-height: 0.87;
   }
@@ -1140,6 +1149,7 @@ img {
           flex-direction: column;
   margin-bottom: 40px;
   padding: 21px 21px 36px;
+  border-bottom: 0px solid;
 }
 .feedback-form__legend {
   padding-top: 17px;
@@ -1194,6 +1204,7 @@ img {
           flex-direction: column;
 }
 .feedback-form__input-text {
+  font-family: inherit;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -1206,7 +1217,15 @@ img {
   height: 58px;
   width: 100%;
   margin-bottom: 19px;
+  padding-left: 23px;
+}
+
+.feedback-form__input-text--name:focus,
+.feedback-form__input-text--name:active {
   padding-left: 19px;
+}
+.feedback-form__input-text--name::-ms-clear {
+  display: none;
 }
 .feedback-form__input-text--contact {
   height: 58px;
@@ -1215,15 +1234,32 @@ img {
   margin-bottom: 16px;
   padding-left: 20px;
 }
+.feedback-form__input-text--contact:focus,
+.feedback-form__input-text--contact:active {
+  padding-left: 16px;
+}
+.feedback-form__input-text--contact::-ms-clear {
+  display: none;
+}
 .feedback-form__input-text--phone {
   background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
   background-position: center right 20px, center;
   background-repeat: no-repeat;
 }
+.feedback-form__input-text--phone:focus,
+.feedback-form__input-text--phone:active {
+  background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 54px, #f2f2f2 54px);
+  background-position: center right 16px, center;
+}
 .feedback-form__input-text--mail {
   background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
   background-position: center right 20px, center;
   background-repeat: no-repeat;
+}
+.feedback-form__input-text--mail:focus,
+.feedback-form__input-text--mail:active {
+  background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 54px, #f2f2f2 54px);
+  background-position: center right 16px, center;
 }
 .feedback-form__input-text:hover {
   background-color: #e5e5e5;
@@ -1335,6 +1371,7 @@ img {
   resize: none;
 }
 .feedback-form__btn {
+  font-family: inherit;
   padding: 16px 47px;
 }
 .feedback-form__note {
@@ -1342,12 +1379,14 @@ img {
 }
 .feedback-form__input-text::-webkit-input-placeholder,
 .feedback-form__textarea::-webkit-input-placeholder {
+  font-family: inherit;
   color: #000000;
   font-weight: bold;
   opacity: 1;
 }
 .feedback-form__input-text::-moz-placeholder,
 .feedback-form__textarea::-moz-placeholder {
+  font-family: inherit;
   color: #000000;
   font-weight: bold;
   opacity: 1;
@@ -1521,7 +1560,7 @@ img {
   .feedback-form__label--checkbox {
     padding-bottom: 53px;
     padding-left: 84px;
-    padding-right: 5px;
+    padding-right: 0;
   }
   .feedback-form__list--name {
     padding-left: 80px;
@@ -1592,7 +1631,7 @@ img {
   fill: #b3b3b3;
 }
 .modal-form {
-  display: block;
+  display: none;
   margin-bottom: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -1676,6 +1715,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      align-items: start;
   background-color: #f2f2f2;
 }
 .video__range {
@@ -1701,17 +1741,27 @@ img {
   cursor: pointer;
 }
 .video__replay {
-  margin-left: 24px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .video__fullscreen {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  margin-right: 23px;
+  order: 2;
+  margin-right: 17px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .video__subtitles {
-  margin-right: 31px;
+  margin-right: 20px;
   margin-left: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .video__replay .replay__icon,
 .video__fullscreen .fullscreen__icon,
@@ -1737,6 +1787,7 @@ img {
     margin-bottom: 40px;
   }
   .video__wrapper {
+    position: relative;
     max-width: 648px;
     margin: 0 auto;
   }
@@ -1748,23 +1799,23 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    height: 93px;
-    margin: 0 auto;
-    margin-top: -93px;
-    background-color: black;
-    opacity: 0.6;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 93px;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
   }
   .video__range {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 74%;
+    order: -1;
+    width: 72%;
     height: 93px;
     padding: 44px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    background-color: transparent;
   }
   .video__scale {
     position: relative;
@@ -1777,16 +1828,14 @@ img {
     background-color: #ffffff;
   }
   .video__replay {
-    margin-left: 34px;
+    margin-left: 27px;
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
   }
-  .video__fullscreen {
-    margin-right: 40px;
-  }
   .video__subtitles {
-    margin-right: 26px;
+    margin-left: 0;
+    margin-right: 15px;
   }
   .video__replay .replay__icon,
   .video__fullscreen .fullscreen__icon,
@@ -1814,5 +1863,11 @@ img {
   .video__wrapper {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .video__range {
+    width: 77%;
+  }
+  .video__subtitles {
+    margin-left: 0;
   }
 }
